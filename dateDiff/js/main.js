@@ -15,7 +15,6 @@ form.onsubmit = (event) => {
     printError('Ooopps - введите дату')
   } else {
     const dateDiff = getDateDiff(firstDate, secondDate);
-
     printResult(dateDiff);
   }
 };
