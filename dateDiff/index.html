@@ -5,10 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../styles/style.css">
   <script type="module" src="./js/main.js"></script>
 </head>
 <body>
-  <form id="datecalc">
+  <div class="switch-button">
+    <button class="calc--btn">Калькулятор дат</button>
+    <button class="timer--btn">Таймер</button>
+  </div>
+  <form id="datecalc" class="form">
     <h3>Калькулятор дат</h3>
     <label>
         <strong>Первая дата:</strong>
@@ -21,7 +26,7 @@
     <button type="submit">Расчитать промежуток</button>
     <p id="datecalc__result"></p>
 </form> 
-<form id="datecalc">
+<form id="timer" class="active">
   <h3>Таймер</h3>
   <label>
       <strong>Первая дата:</strong>
