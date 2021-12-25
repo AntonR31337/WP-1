@@ -24,10 +24,8 @@ form.onsubmit = (event) => {
 const datecalc = document.querySelector('#datecalc');
 const timer = document.querySelector('#timer');
 
-const el = document.querySelector('body').addEventListener('click', event => {
-  if (event.target.classList == 'calc--btn') {
-    getHidden();
-  } else if (event.target.classList == 'timer--btn') {
+document.querySelector('body').addEventListener('click', event => {
+  if ( (event.target.tagName == "BUTTON") && (event.target.classList == 'timer--btn' || 'calc--btn')) {
     getHidden();
   } else {
     return
