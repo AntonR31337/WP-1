@@ -1,0 +1,24 @@
+{
+  "name": "wp-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonR31337/WP-1.git"
+  },
+  "author": "AntonR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonR31337/WP-1/issues"
+  },
+  "homepage": "https://github.com/AntonR31337/WP-1#readme",
+  "dependencies": {
+    "howler": "^2.2.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
