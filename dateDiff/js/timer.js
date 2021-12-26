@@ -22,5 +22,6 @@ export function startInterval(time) {
   }
 
 export function stopInterval() {
+    
     clearInterval(timer);
   }  

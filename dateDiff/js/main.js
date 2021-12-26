@@ -33,7 +33,11 @@ document.querySelector('body').addEventListener('click', (event) => {
 
 // timer
 
-document.getElementById("start").addEventListener("click", () => {
+document.getElementById("start").addEventListener("click", (event) => {
+  event.preventDefault();
   startInterval();
 });
-document.getElementById("stop").addEventListener("click", stopInterval);
+document.getElementById("stop").addEventListener("click", (event) => {
+  event.preventDefault();
+  stopInterval();
+});
