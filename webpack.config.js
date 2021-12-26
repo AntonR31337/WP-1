@@ -27,7 +27,7 @@ module.exports = {
     plugins: [
         new HtmlPlugin({ template: resolve(__dirname, '/dateDiff/index.html') }),
         new MinCssPlugin({ 
-            filename: '[name][contanthash].css'
+            filename: '[name][contenthash].css'
          })
     ]
 }

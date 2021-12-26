@@ -3,6 +3,8 @@ import getDateDiff from './getDateDiff.js';
 import {getHidden} from './getHidden.js'
 import { startInterval, stopInterval } from './timer.js';
 
+import '../../mp3/beep.mp3';
+import '../../mp3/gong.mp3';
 // import src from '../../test.png'
 import '../../styles/style.css'
 
