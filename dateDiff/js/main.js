@@ -3,6 +3,9 @@ import getDateDiff from './getDateDiff.js';
 import {getHidden} from './getHidden.js'
 import { startInterval, stopInterval } from './timer.js';
 
+import src from '../../test.png'
+import '../../styles/style.css'
+
 const form = document.getElementById('datecalc');
 
 form.onsubmit = (event) => {

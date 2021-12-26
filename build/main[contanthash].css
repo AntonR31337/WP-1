@@ -1,0 +1,19 @@
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/style.css ***!
+  \********************************************************************/
+body {
+  position: relative;
+}
+
+#datecalc, #timer {
+  position: absolute;
+}
+
+.active {
+  color: red;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
