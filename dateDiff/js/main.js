@@ -1,5 +1,7 @@
 import { printError, printResult } from './printResult.js';
 import getDateDiff from './getDateDiff.js';
+import {getHidden} from './getHidden.js'
+import { startInterval, stopInterval } from './timer.js';
 
 const form = document.getElementById('datecalc');
 
@@ -21,18 +23,17 @@ form.onsubmit = (event) => {
 
 // home task 1
 
-const datecalc = document.querySelector('#datecalc');
-const timer = document.querySelector('#timer');
-
-document.querySelector('body').addEventListener('click', event => {
-  if ( (event.target.tagName == "BUTTON") && (event.target.classList == 'timer--btn' || 'calc--btn')) {
+document.querySelector('body').addEventListener('click', (event) => {
+  if ( (event.target.parentElement.classList.contains('switch-button')) && (event.target.classList == 'timer--btn' || 'calc--btn')) {
     getHidden();
   } else {
     return
   }
 });
 
-function getHidden() {
-  datecalc.classList.toggle('active')
-  timer.classList.toggle('active')
-}
+// timer
+
+document.getElementById("start").addEventListener("click", () => {
+  startInterval();
+});
+document.getElementById("stop").addEventListener("click", stopInterval);

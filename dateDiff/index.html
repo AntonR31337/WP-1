@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,34 @@
   <link rel="stylesheet" href="../styles/style.css">
   <script type="module" src="./js/main.js"></script>
 </head>
+
 <body>
   <div class="switch-button">
     <button class="calc--btn">Калькулятор дат</button>
     <button class="timer--btn">Таймер</button>
   </div>
-  <form id="datecalc" class="form">
+  <form id="datecalc" class="active">
     <h3>Калькулятор дат</h3>
     <label>
-        <strong>Первая дата:</strong>
-        <input type="date" name="firstDate" />
+      <strong>Первая дата:</strong>
+      <input type="date" name="firstDate" />
     </label>
     <label>
-        <strong>Вторая дата:</strong>
-        <input type="date" name="secondDate" />
+      <strong>Вторая дата:</strong>
+      <input type="date" name="secondDate" />
     </label>
     <button type="submit">Расчитать промежуток</button>
     <p id="datecalc__result"></p>
-</form> 
-<form id="timer" class="active">
-  <h3>Таймер</h3>
-  <p>ТАЙМЕР</p>
-</form> 
+  </form>
+  <form id="timer" action="#">
+    <h3>Таймер</h3>
+    <input type="number" name="time" id="time">
+    <div class="timer__display">0</div>
+    <div class="">
+      <button id = "start">Старт</button>
+      <button id = "stop">Стоп</button>
+    </div>
+  </form>
 </body>
+
 </html>
